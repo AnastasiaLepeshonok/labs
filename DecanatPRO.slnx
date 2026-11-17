@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="DecanatPRO.WPF/DecanatPRO.WPF.csproj" Id="f5becabd-0993-415f-852c-9a813950d751" />
   <Project Path="Model/Model.csproj" Id="6d16c965-0a9a-43a4-b41e-f18095f31d28" />
   <Project Path="ViewModel/ViewModel.csproj" Id="fc6b9f25-a170-4059-89b7-847cdd47553a" />
 </Solution>
