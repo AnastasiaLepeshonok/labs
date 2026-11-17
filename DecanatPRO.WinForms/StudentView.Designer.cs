@@ -32,51 +32,37 @@ namespace DecanatPRO.WinForms
             colSpeciality = new ColumnHeader();
             colGroup = new ColumnHeader();
             SuspendLayout();
-            // 
-            // lblName
-            // 
+            
             lblName.AutoSize = true;
             lblName.Location = new Point(12, 15);
             lblName.Name = "lblName";
             lblName.Text = "ФИО";
-            // 
-            // lblSpeciality
-            // 
+            
             lblSpeciality.AutoSize = true;
             lblSpeciality.Location = new Point(245, 15);
             lblSpeciality.Name = "lblSpeciality";
             lblSpeciality.Text = "Направление";
-            // 
-            // lblGroup
-            // 
+            
             lblGroup.AutoSize = true;
             lblGroup.Location = new Point(428, 15);
             lblGroup.Name = "lblGroup";
             lblGroup.Text = "Группа";
-            // 
-            // Name_TextBox
-            // 
+            
             Name_TextBox.Location = new Point(12, 35);
             Name_TextBox.Name = "Name_TextBox";
             Name_TextBox.Size = new Size(220, 23);
             Name_TextBox.TabIndex = 0;
-            // 
-            // Speciality_TextBox
-            // 
+            
             Speciality_TextBox.Location = new Point(245, 35);
             Speciality_TextBox.Name = "Speciality_TextBox";
             Speciality_TextBox.Size = new Size(170, 23);
             Speciality_TextBox.TabIndex = 1;
-            // 
-            // Group_TextBox
-            // 
+            
             Group_TextBox.Location = new Point(428, 35);
             Group_TextBox.Name = "Group_TextBox";
             Group_TextBox.Size = new Size(110, 23);
             Group_TextBox.TabIndex = 2;
-            // 
-            // AddStudent_Button
-            // 
+            
             AddStudent_Button.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             AddStudent_Button.Location = new Point(552, 33);
             AddStudent_Button.Name = "AddStudent_Button";
@@ -86,9 +72,7 @@ namespace DecanatPRO.WinForms
             AddStudent_Button.Text = "Добавить";
             AddStudent_Button.UseVisualStyleBackColor = true;
             AddStudent_Button.Click += AddStudent_Button_Click;
-            // 
-            // Students_ListView
-            // 
+            
             Students_ListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             Students_ListView.Columns.AddRange(new ColumnHeader[] { colName, colSpeciality, colGroup });
             Students_ListView.FullRowSelect = true;
@@ -102,24 +86,16 @@ namespace DecanatPRO.WinForms
             Students_ListView.TabIndex = 4;
             Students_ListView.UseCompatibleStateImageBehavior = false;
             Students_ListView.View = System.Windows.Forms.View.Details;
-            // 
-            // colName
-            // 
+             
             colName.Text = "ФИО";
             colName.Width = 300;
-            // 
-            // colSpeciality
-            // 
+             
             colSpeciality.Text = "Направление";
             colSpeciality.Width = 220;
-            // 
-            // colGroup
-            // 
+             
             colGroup.Text = "Группа";
             colGroup.Width = 150;
-            // 
-            // DeleteStudent_Button
-            // 
+            
             DeleteStudent_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DeleteStudent_Button.Location = new Point(12, 395);
             DeleteStudent_Button.Name = "DeleteStudent_Button";
@@ -128,9 +104,7 @@ namespace DecanatPRO.WinForms
             DeleteStudent_Button.Text = "Удалить";
             DeleteStudent_Button.UseVisualStyleBackColor = true;
             DeleteStudent_Button.Click += DeleteStudent_Button_Click;
-            // 
-            // StudentView
-            // 
+            
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(720, 440);

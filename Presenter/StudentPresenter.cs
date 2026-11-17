@@ -17,7 +17,6 @@ namespace Presenter
             view.DeleteDataEvent += model.Delete;
         }
 
-        // Распаковка object-пакетов и сборка экземпляра Student
         private void OnAddData(IEnumerable<object> data)
         {
             List<object> list = new List<object>(data);
