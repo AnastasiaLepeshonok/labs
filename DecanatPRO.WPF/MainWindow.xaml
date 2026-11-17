@@ -10,7 +10,6 @@
         MinHeight="400" MinWidth="640"
         WindowStartupLocation="CenterScreen">
 
-    <!-- DataContext сразу в XAML (по лекции) -->
     <Window.DataContext>
         <vm:StudentViewModel />
     </Window.DataContext>
@@ -23,14 +22,12 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Заголовок -->
         <TextBlock Grid.Row="0"
                    Text="Учёт студентов — MVVM"
                    FontSize="18"
                    FontWeight="SemiBold"
                    Margin="0,0,0,12"/>
 
-        <!-- Поля ввода + кнопка Добавить -->
         <Grid Grid.Row="1" Margin="0,0,0,12">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -39,7 +36,6 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <!-- ФИО -->
             <StackPanel Grid.Column="0" Margin="0,0,8,0">
                 <TextBlock Text="ФИО" Margin="0,0,0,4"/>
                 <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
@@ -47,7 +43,6 @@
                          Padding="4,2"/>
             </StackPanel>
 
-            <!-- Направление -->
             <StackPanel Grid.Column="1" Margin="0,0,8,0">
                 <TextBlock Text="Направление" Margin="0,0,0,4"/>
                 <TextBox Text="{Binding Speciality, UpdateSourceTrigger=PropertyChanged}"
@@ -55,7 +50,6 @@
                          Padding="4,2"/>
             </StackPanel>
 
-            <!-- Группа -->
             <StackPanel Grid.Column="2" Margin="0,0,8,0">
                 <TextBlock Text="Группа" Margin="0,0,0,4"/>
                 <TextBox Text="{Binding Group, UpdateSourceTrigger=PropertyChanged}"
@@ -63,7 +57,6 @@
                          Padding="4,2"/>
             </StackPanel>
 
-            <!-- Кнопка Добавить -->
             <Button Grid.Column="3"
                     Content="Добавить"
                     Command="{Binding AddCommand}"
@@ -73,7 +66,6 @@
         </Grid>
 
 
-        <!-- Список студентов -->
         <DataGrid Grid.Row="2"
                   ItemsSource="{Binding Students}"
                   SelectedItem="{Binding SelectedStudent}"
@@ -98,7 +90,6 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Кнопка Удалить -->
         <Button Grid.Row="3"
                 Content="Удалить выбранного"
                 Command="{Binding DeleteCommand}"
